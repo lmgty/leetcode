@@ -1,18 +1,11 @@
 # -*- coding: UTF-8 -*-
 class Solution:
-    def removeElement(self, nums, val):
-        p = 0
-        length = len(nums)
-        for i in range(length):
-            if nums[i] != val:
-                nums[p] = nums[i]
-                p += 1
-        return p
+    def strStr(self, haystack, needle):
+        return haystack.find(needle)
 
 
 if __name__ == '__main__':
-    nums = [1]
-    val = 1
+    haystack = "wwwaaaaa"
+    needle = "aa"
     checker = Solution()
-    print(checker.removeElement(nums, val))
-    print(nums)
+    print(checker.strStr(haystack, needle))
